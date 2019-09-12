@@ -4,8 +4,8 @@
 	<innerDriver>
 		<driverName>TracDriver</driverName>
 		<BTSUrl>http://kamilw/trac/</BTSUrl>
-		<user>gosiek</user>
-		<password>11111</password>
+		<user></user>
+		<password></password>
 		<projectName>ProjectTest</projectName>
 		<tracBugTimeHourOffset>2</tracBugTimeHourOffset>
 		<remoteIdFieldName>id_assembli</remoteIdFieldName>
@@ -15,9 +15,8 @@
 	<outerDriver>
 		<driverName>AssemblaDriver</driverName>
 		<BTSUrl>https://api.assembla.com/</BTSUrl>
-		<!--  ponizsze wartosci to clientID i clientSecret projektu, ktore trzeba pobrac ze strony assembli -->
-		<user>cPMx_sSKWr4QBdacwqjQXA</user>
-		<password>acd38f51ed3a4a028b7b598d4b209a12</password>
+		<user></user>
+		<password></password>
 		<projectName>test_generalny2</projectName>
 		<editCommentMarker>[Outer Comment edit]
 		</editCommentMarker>
