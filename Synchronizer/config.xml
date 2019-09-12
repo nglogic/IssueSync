@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<synchronizerConfiguration>
+	<lastModificationDateFile>C:\Documents and Settings\socki\workspace\nglogic\Synchronizer\lastmodif.date</lastModificationDateFile>
+	<innerDriver>
+		<driverName>TracDriver</driverName>
+		<BTSUrl>http://kamilw/trac/</BTSUrl>
+		<user>gosiek</user>
+		<password>11111</password>
+		<projectName>ProjectTest</projectName>
+		<tracBugTimeHourOffset>2</tracBugTimeHourOffset>
+		<remoteIdFieldName>id_assembli</remoteIdFieldName>
+		<editCommentMarker>[Inner Comment edit]
+		</editCommentMarker>
+	</innerDriver>
+	<outerDriver>
+		<driverName>AssemblaDriver</driverName>
+		<BTSUrl>https://api.assembla.com/</BTSUrl>
+		<!--  ponizsze wartosci to clientID i clientSecret projektu, ktore trzeba pobrac ze strony assembli -->
+		<user>cPMx_sSKWr4QBdacwqjQXA</user>
+		<password>acd38f51ed3a4a028b7b598d4b209a12</password>
+		<projectName>test_generalny2</projectName>
+		<editCommentMarker>[Outer Comment edit]
+		</editCommentMarker>
+		<additionalConfigFile>C:\Documents and Settings\socki\workspace\nglogic\AssemblaTokenLoader\tokens.txt</additionalConfigFile>
+	</outerDriver>
+	<mapper>
+		<statusMapping>
+       		<entry key="new" value="New" />
+            <entry key="assigned" value="Accepted" />
+            <entry key="fixed" value="Fixed" />
+		</statusMapping>
+		<usersMapping>
+			<entry key="gosiek2" value="gosiek" />
+            <entry key="gosiek" value="gosiaw" />
+		</usersMapping>
+		<priorityMapping>
+			<entry key="major" value="Normal" />
+	        <entry key="critical" value="High" />
+	        <entry key="minor" value="Low" />
+	        <entry key="trivial" value="Lowest" />
+        </priorityMapping>
+		<!--  <componentMapping>
+       		<entry key="component1" value="noga" />
+        </componentMapping>-->
+		<milestoneMapping>
+       		<entry key="milestone1" value="Backlog" />
+            <entry key="milestone2" value="Current" />
+        </milestoneMapping>
+		<commentMarker>%#4r8!</commentMarker>
+		<otherUserName>other</otherUserName>
+	</mapper>
+	<filter>
+		<users>
+			<user>gosiek</user>
+			<user>gosiek2</user>
+		</users>
+		<priorities>		
+			<priority>major</priority>
+			<priority>minor</priority>
+			<priority>trivial</priority>
+		</priorities>
+		<milestones>
+			<milestone>milestone1</milestone>
+			<milestone>milestone2</milestone>
+		</milestones>
+	</filter>
+</synchronizerConfiguration>
